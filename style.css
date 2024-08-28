@@ -298,52 +298,36 @@ h2 {
     font-size: 14px;
     color: #777;
 }
-.education-section {
-    width: 100%;
-    padding: 20px;
-}
-
-.education-list {
+.education-container {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     gap: 20px;
-}
-
-.education-item {
+  }
+  
+  .education-item {
     display: flex;
-    align-items: center;
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.education-icon {
-    flex: 0 0 50px; /* Set width of the icon area */
-    margin-right: 20px; /* Spacing between icon and details */
-}
-
-.education-icon img {
-    width: 50px; /* Set the size of the icons */
+    align-items: flex-start;
+    width: 48%; /* Adjust as needed */
+  }
+  
+  .university-logo {
+    width: 40px; /* Adjust size as needed */
     height: auto;
-}
-
-.education-details {
-    flex-grow: 1; /* Allows details section to grow */
-}
-
-.education-details h3 {
-    margin: 0 0 10px;
-    font-size: 1.2em;
-}
-
-.education-details p {
+    margin-right: 10px;
+    padding-top: 10px;
+    margin-left: -5px;
+  }
+  
+  .university-info {
+    flex-grow: 1;
+  }
+  
+  h3 {
+    margin: 0 0 5px 0;
+    font-size: 16px; /* Adjust as needed */
+  }
+  
+  p {
     margin: 0;
-    color: #666;
-}
-.education-title{
-    font-size: 1.5em;
-    margin-bottom: 10px;
-
-    margin-left: -20px;
-}
+    font-size: 14px; /* Adjust as needed */
+  }
