@@ -6,6 +6,11 @@ body {
     color: #333;
     background-color: #f4f4f4;
 }
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+}
 /* Add a black background color to the top navigation */
   .topnav {
     overflow: hidden;
@@ -64,7 +69,13 @@ body {
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
+/* Pada layar kecil, ubah ukuran max-width */
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 15px;
+    }
+}
 .header {
     display: flex;
     align-items: center;
@@ -143,6 +154,13 @@ body {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+}
+/* Ubah layout menjadi satu kolom pada layar kecil */
+@media (max-width: 768px) {
+    .experience-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
 
 .experience-icon {
@@ -243,9 +261,13 @@ body {
     flex-direction: column; /* Atur agar flex item disusun secara vertikal */
     align-items: center; /* Pusatkan item di tengah */
     margin: 20px;
-    margin-left: 100px;
+    
 }
-
+@media (max-width: 768px) {
+    .training-container {
+        margin-left: 0;  /* Hilangkan margin kiri */
+    }
+}
 .training-text {
     margin-bottom: 10px; /* Memberikan sedikit jarak antara teks dan ikon */
 }
@@ -298,12 +320,23 @@ h2 {
     font-size: 14px;
     color: #777;
 }
+/* Ubah ukuran font di layar kecil */
+@media (max-width: 768px) {
+    .footer {
+        font-size: 12px;
+    }
+}
 .education-container {
     display: flex;
     justify-content: space-between;
     gap: 20px;
   }
-  
+  /* Ubah menjadi satu kolom pada layar kecil */
+@media (max-width: 768px) {
+    .education-container {
+        flex-direction: column;
+    }
+}
   .education-item {
     display: flex;
     align-items: flex-start;
