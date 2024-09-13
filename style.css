@@ -68,6 +68,7 @@ body {
     background: #fff;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: -100;
 }
 /* Pada layar kecil, ubah ukuran max-width */
 @media (max-width: 768px) {
@@ -153,13 +154,18 @@ body {
 .experience-item {
     display: flex;
     align-items: center;
+    justify-content: space-between; /* Untuk memastikan nama dan ikon ada di sisi kanan/kiri */
+    position: relative; /* Agar icon bisa diposisikan dengan absolute */
     margin-bottom: 20px;
 }
+
+
 /* Ubah layout menjadi satu kolom pada layar kecil */
 @media (max-width: 768px) {
     .experience-item {
         flex-direction: column;
         align-items: flex-start;
+
     }
 }
 
@@ -170,8 +176,19 @@ body {
     margin-left: -70px;
     margin-bottom: 20px;
 }
+@media (max-width: 768px) {
+    .experience-icon {
+        width: 40px;
+        height: 40px;
+        position: absolute; /* Posisi absolut untuk menempatkan ikon di kanan */
+        right: 0; /* Pastikan berada di pojok kanan */
+        top: 0; /* Untuk memastikan posisinya sejajar dengan nama */
+        margin-right: 10px; /* Memberikan jarak dengan tepi kanan */
+    }
+}
 
 .experience-details {
+    
     flex-grow: 1;
 }
 /* Navbar styles */
